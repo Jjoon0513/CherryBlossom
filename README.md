@@ -16,9 +16,10 @@
 
 ```cb
 bring std
+bring str
 
 f greet(name: str) -> str {
-    "Hello, " + name + "!";
+    str.as_str("Hello") + name + "!";
 }
 
 f main() -> int {
@@ -45,7 +46,7 @@ Cherry Blossom avoids type inference on purpose. Every type must be explicitly s
 
 ### Requirements
 
-- `gcc` for backend compilation
+- `g++` for backend compilation
 
 ### Build and Run
 
